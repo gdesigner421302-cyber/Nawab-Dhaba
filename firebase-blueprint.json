@@ -1,0 +1,47 @@
+{
+  "$schema": "https://firebase.google.com/schemas/firestore-blueprint.json",
+  "entities": {
+    "users": {
+      "description": "Registered and authenticated customers of Nawab Dhaba",
+      "fields": {
+        "uid": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "phone": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "reservations": {
+      "description": "Table reservations at Nawab Dhaba Bhiwandi",
+      "fields": {
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "phone": { "type": "string" },
+        "partySize": { "type": "number" },
+        "date": { "type": "string" },
+        "timeSlot": { "type": "string" },
+        "seatingPreference": { "type": "string" },
+        "specialRequests": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "orders": {
+      "description": "Food orders placed by customers for dine-in or highway takeaway",
+      "fields": {
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "items": { "type": "array" },
+        "totalAmount": { "type": "number" },
+        "diningType": { "type": "string" },
+        "tableNumber": { "type": "string" },
+        "status": { "type": "string" },
+        "paymentMethod": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    }
+  }
+}

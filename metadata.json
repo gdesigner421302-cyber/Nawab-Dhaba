@@ -1,0 +1,6 @@
+{
+  "name": "Nawab Dhaba, Bhiwandi",
+  "description": "Experience the Royal Flavors of India at Nawab Dhaba, Bhiwandi. Authentic Mughlai, Tandoori & North Indian Cuisine on the Mumbai-Nashik Highway.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
